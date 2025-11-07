@@ -348,7 +348,7 @@ NUM_NEGATIVE = 10
 embedding_dim = 200
 lr = 1e-2
 device = "cuda"
-num_to_test = 30  # len(df_test)  # 30  # 30  # len(df_test)  # 20
+num_to_test = len(df_test)  # 30  # 30  # len(df_test)  # 20
 
 train_mask = torch.zeros(len(df_all), dtype=int)
 train_mask[: len(df_train)] = 1
